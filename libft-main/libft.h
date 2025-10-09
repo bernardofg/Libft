@@ -1,25 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bfantine@student.42porto.com <bfantine>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/07 21:17:17 by bfantine@st       #+#    #+#             */
-/*   Updated: 2025/10/09 20:00:28 by bfantine@st      ###   ########.fr       */
+/*   Created: 2025/10/09 19:11:47 by bfantine@st       #+#    #+#             */
+/*   Updated: 2025/10/09 19:11:47 by bfantine@st      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void *ft_memset(void *b, int c, size_t len)
-{
-    unsigned char   *temp;
+#ifndef LIBFT_H
+#define LIBFT_H
 
-    temp = (unsigned char *)b;
-    while (len > 0)
-    {
-        *temp = (unsigned char)c;
-        temp++;
-        len--;
-    }
-    return (b);
-}
+#include <stdlib.h>
