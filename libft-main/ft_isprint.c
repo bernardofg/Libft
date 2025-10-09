@@ -6,7 +6,7 @@
 /*   By: bfantine@student.42porto.com <bfantine>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/07 16:57:37 by bfantine          #+#    #+#             */
-/*   Updated: 2025/10/09 20:47:24 by bfantine@st      ###   ########.fr       */
+/*   Updated: 2025/10/09 20:48:46 by bfantine@st      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,5 +16,5 @@ int ft_isprint(int c)
 {
     if (c >= 32 && c <= 126)
         return (c);
-    return (0)
+    return (0);
 }
