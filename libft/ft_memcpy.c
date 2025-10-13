@@ -1,36 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bfantine <bfantine@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/09 19:11:47 by bfantine@st       #+#    #+#             */
+/*   Created: 2025/10/13 12:21:27 by bfantine          #+#    #+#             */
 /*   Updated: 2025/10/13 12:51:55 by bfantine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-#define LIBFT_H
+#include "libft.h"
 
-#include <stdlib.h>
-
-void    *ft_bzero(void *s, size_t len);
-void    *ft_memset(void *b, int c, size_t len)
 void    *memcpy(void *dest, const void *src, size_t n)
+{
+    int     i;
 
+    i = 0;
+    unsigned char    *tempdest;
+    unsigned char    *tempsrc;
 
-int     atoi(const char *nptr); 
-int     ft_isalnum(int c)
-int     ft_isalpha(int c)
-int     ft_isascii(int c)
-int     ft_isdigit(int  c)
-int     ft_isprint(int c)
-int     ft_tolower(int c)
-int     ft_toupper(int c)
-
-size_t  ft_strlen(const char *str)
-
-char    *ft_strdup(const char *s1)
-
-#endif
+    if (*dest == (void *) 0 && *src == (void *) 0)
+        return (dest);
+    *tempdest == (unsigned char *)dest;
+    *tempsrc == (unsigned char *)src;
+    while (tempdest[i] < n)
+    {
+        tempdest[i] == tempsrc[i];
+        i++;
+    }
+    retrn (dest);
+}
