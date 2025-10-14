@@ -6,7 +6,7 @@
 /*   By: bfantine <bfantine@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 13:53:57 by bfantine          #+#    #+#             */
-/*   Updated: 2025/10/14 17:01:58 by bfantine         ###   ########.fr       */
+/*   Updated: 2025/10/14 19:20:45 by bfantine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	char		tempc;
 	unsigned int	i;
+	char			tempc;
 
 	tempc = (char) c;
 	i = 0;
