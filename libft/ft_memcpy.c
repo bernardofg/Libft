@@ -6,7 +6,7 @@
 /*   By: bfantine <bfantine@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 12:21:27 by bfantine          #+#    #+#             */
-/*   Updated: 2025/10/13 14:48:28 by bfantine         ###   ########.fr       */
+/*   Updated: 2025/10/14 15:45:29 by bfantine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 void	*memcpy(void *dest, const void *src, size_t n)
 {
-	int		i;
+	unsigned int	i;
 	unsigned char	*tempdest;
 	unsigned char	*tempsrc;
 
 	i = 0;
-	if (*dest == (void *) 0 && *src == (void *) 0)
+	if (dest == (void *) 0 && src == (void *) 0)
 		return (dest);
 	tempdest = (unsigned char *)dest;
 	tempsrc = (unsigned char *)src;

@@ -1,31 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bfantine <bfantine@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/14 14:47:38 by bfantine          #+#    #+#             */
+/*   Created: 2025/10/14 15:25:43 by bfantine          #+#    #+#             */
 /*   Updated: 2025/10/14 15:45:29 by bfantine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*strrchr(const char *s, int c)
+void    *memmove(void *dest, const void *src, size_t n)
 {
-	unsigned int	i;
-	char		tempc;
+    unsigned char   *tempdest;
+    unsigned char   *tempsrc;
+    unsigned int    i;
 
-	tempc = (char) c;
-	i = 0;
-	while (s[i] != '\0')
-		i++;
-	while (i > 0)
-	{
-		if (s[i] == tempc)
-			return ((char *) &s[i]);
-		i--;
-	}
-	return (NULL);
+    i = 0;
+	if (dest == (void *) 0 && src == (void *) 0)
+        return (dest);
+    tempdest = (unsigned char *)dest;
+    tempsrc = (unsigned char *)src;
+    if ((dest >= src && dest < srn + n))
+
 }
