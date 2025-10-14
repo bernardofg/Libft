@@ -6,13 +6,13 @@
 /*   By: bfantine@student.42porto.com <bfantine>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/07 21:50:04 by bfantine@st       #+#    #+#             */
-/*   Updated: 2025/10/09 20:43:08 by bfantine@st      ###   ########.fr       */
+/*   Updated: 2025/10/13 14:14:23 by bfantine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void bzero(void *s, size_t n);
+void	bzero(void *s, size_t n);
 {
-    ft_memset(s, 0, n);
+	ft_memset(s, 0, n);
 }

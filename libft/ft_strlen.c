@@ -6,18 +6,18 @@
 /*   By: bfantine@student.42porto.com <bfantine>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/07 17:00:29 by bfantine          #+#    #+#             */
-/*   Updated: 2025/10/09 20:43:19 by bfantine@st      ###   ########.fr       */
+/*   Updated: 2025/10/13 14:35:08 by bfantine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t ft_strlen(const char *str)
+size_t	ft_strlen(const char *str)
 {
-    size_t i;
+	size_t	i;
 
-    i = 0;
-    while (str[i] != '\0')
-        i++;
-    return (i);
+	i = 0;
+	while (str[i] != '\0')
+		i++;
+	return (i);
 }

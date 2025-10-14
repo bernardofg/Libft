@@ -1,41 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bfantine@student.42porto.com <bfantine>    +#+  +:+       +#+        */
+/*   By: bfantine <bfantine@student.42porto.co      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/09 16:42:29 by bfantine@st       #+#    #+#             */
-/*   Updated: 2025/10/13 14:38:19 by bfantine         ###   ########.fr       */
+/*   Created: 2025/10/14 14:47:38 by bfantine          #+#    #+#             */
+/*   Updated: 2025/10/14 14:58:37 by bfantine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strlen(const char *str)
+char	*strrchr(const char *s, int c)
 {
-	int	i;
+	unsigned int	i;
+	char		tempc;
 
+	tempc = (char) c;
 	i = 0;
-	while (str[i] != '\0')
+	while (s[i] != '\0')
 		i++;
-	return (i);
-}
-
-char	*ft_strdup(const char *s1)
-{
-	char	*dest;
-	size_t	i;
-
-	dest = (char *) malloc(ft_strlen(s1) + 1)
-		if (!dest)
-		return (NULL);
-	i = 0;
-	while (s1[i])
+	while (i > 0)
 	{
-		dest[i] = s1[i];
-		i++;
+		if (s[i] == tempc)
+			return ((char *) &s[i]);
+		i--;
 	}
-	dest[i] = 0;
-	return (dest);
+	return (NULL);
 }

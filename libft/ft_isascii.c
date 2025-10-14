@@ -6,17 +6,17 @@
 /*   By: bfantine@student.42porto.com <bfantine>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/07 16:54:39 by bfantine          #+#    #+#             */
-/*   Updated: 2025/10/07 20:04:47 by bfantine@st      ###   ########.fr       */
+/*   Updated: 2025/10/13 14:40:03 by bfantine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isascii(int c)
+int	ft_isascii(int c)
 {
-    if (c == 0)
-        return (1);
-    else if (c >= 1 && c <= 127)
-        return (c);
-    return (0);
+	if (c == 0)
+		return (1);
+	else if (c >= 1 && c <= 127)
+		return (c);
+	return (0);
 }
