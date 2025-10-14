@@ -6,7 +6,7 @@
 /*   By: bfantine <bfantine@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/09 19:11:47 by bfantine@st       #+#    #+#             */
-/*   Updated: 2025/10/14 14:15:35 by bfantine         ###   ########.fr       */
+/*   Updated: 2025/10/14 17:01:57 by bfantine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@
 
 void	*ft_bzero(void *s, size_t len);
 void	*ft_memset(void *b, int c, size_t len);
-void	*memcpy(void *dest, const void *src, size_t n);
+void	*ft_memcpy(void *dest, const void *src, size_t n);
 
-int	atoi(const char *nptr);
+int	ft_atoi(const char *nptr);
 int	ft_isalnum(int c);
 int	ft_isalpha(int c);
 int	ft_isascii(int c);

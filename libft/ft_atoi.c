@@ -6,11 +6,11 @@
 /*   By: bfantine <bfantine@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/07 19:28:22 by bfantine@st       #+#    #+#             */
-/*   Updated: 2025/10/13 14:15:24 by bfantine         ###   ########.fr       */
+/*   Updated: 2025/10/14 17:01:58 by bfantine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	atoi(const char *nptr)
+int	ft_atoi(const char *nptr)
 {
 	int	i;
 	int	sign;
