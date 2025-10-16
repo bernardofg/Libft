@@ -6,7 +6,7 @@
 /*   By: bfantine <bfantine@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 15:25:43 by bfantine          #+#    #+#             */
-/*   Updated: 2025/10/16 17:45:05 by bfantine         ###   ########.fr       */
+/*   Updated: 2025/10/16 18:18:29 by bfantine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned char	*tempdest;
 	unsigned char	*tempsrc;
-	size_t			i;
+	size_t				i;
 
 	if (!dest && !src)
 		return (NULL);

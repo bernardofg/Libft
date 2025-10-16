@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bfantine <bfantine@student.42porto.com>    +#+  +:+       +#+        */
+/*   By: bfantine <bfantine@student.42porto.co      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/07 16:57:37 by bfantine          #+#    #+#             */
-/*   Updated: 2025/10/16 18:18:29 by bfantine         ###   ########.fr       */
+/*   Created: 2025/10/16 17:52:59 by bfantine          #+#    #+#             */
+/*   Updated: 2025/10/16 18:17:54 by bfantine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isprint(int c)
+char	*strnstr(const char *big, const char *little, size_t len)
 {
-	return (c >= 32 && c <= 126);
+	
 }

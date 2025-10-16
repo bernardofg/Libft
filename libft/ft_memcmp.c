@@ -1,47 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bfantine <bfantine@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/13 12:21:27 by bfantine          #+#    #+#             */
+/*   Created: 2025/10/16 17:56:38 by bfantine          #+#    #+#             */
 /*   Updated: 2025/10/16 18:18:29 by bfantine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dest, const void *src, size_t n)
+ int ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	unsigned int	i;
-	unsigned char	*tempdest;
-	unsigned char	*tempsrc;
+    unsigned char   *str1;
+    unsigned char   *str2;
+    size_t          i;
 
-	i = 0;
-	if (dest == (void *) 0 && src == (void *) 0)
-		return (dest);
-	tempdest = (unsigned char *)dest;
-	tempsrc = (unsigned char *)src;
-	while ((i < n) && tempsrc[i] != '\0')
-	{
-		tempdest[i] = tempsrc[i];
-		i++;
-	}
-	return (dest);
+    str1 = (unsigned char *)s1;
+    str2 = (unsigned char *)s2;
+    i = 0;
+    while (i < n)
+    {
+        if (str1[i] != str2[i])
+            return (str1[i] - str2[i]);
+        i++;
+    }
+    return (0);
 }
-/*
-#include <stdio.h>
-int	main(void)
-{
-	char src[] = "abcdef";
-
-	printf("Antes: %s\n", src);
-
-	ft_memcpy(src + 2, src, 4);
-
-	printf("Depois: %s\n", src);
-
-	return (0);
-}
-*/
