@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bfantine@student.42porto.com <bfantine>    +#+  +:+       +#+        */
+/*   By: bfantine <bfantine@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/07 16:54:39 by bfantine          #+#    #+#             */
-/*   Updated: 2025/10/13 14:40:03 by bfantine         ###   ########.fr       */
+/*   Updated: 2025/10/15 13:01:25 by bfantine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,5 @@
 
 int	ft_isascii(int c)
 {
-	if (c == 0)
-		return (1);
-	else if (c >= 1 && c <= 127)
-		return (c);
-	return (0);
+	return (c >= 0 && c <= 127);
 }

@@ -6,7 +6,7 @@
 /*   By: bfantine <bfantine@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 14:47:38 by bfantine          #+#    #+#             */
-/*   Updated: 2025/10/14 19:21:07 by bfantine         ###   ########.fr       */
+/*   Updated: 2025/10/15 10:58:58 by bfantine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,7 @@ char	*ft_strrchr(const char *s, int c)
 			return ((char *) &s[i]);
 		i--;
 	}
+	if (s[i] == tempc)
+		return ((char *) &s[i]);
 	return (NULL);
 }
