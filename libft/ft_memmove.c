@@ -6,20 +6,20 @@
 /*   By: bfantine <bfantine@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 15:25:43 by bfantine          #+#    #+#             */
-/*   Updated: 2025/10/15 12:50:29 by bfantine         ###   ########.fr       */
+/*   Updated: 2025/10/16 17:45:05 by bfantine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    *ft_memmove(void *dest, const void *src, size_t n)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned char	*tempdest;
 	unsigned char	*tempsrc;
-	size_t		i;
+	size_t			i;
 
 	if (!dest && !src)
-		return (NULL);  
+		return (NULL);
 	tempdest = (unsigned char *)dest;
 	tempsrc = (unsigned char *)src;
 	if (tempdest > tempsrc)
@@ -29,14 +29,14 @@ void    *ft_memmove(void *dest, const void *src, size_t n)
 			tempdest[i] = tempsrc[i];
 	}
 	else
-    {
-        i = 0;
-        while (i < n)
-        {
+	{
+		i = 0;
+		while (i < n)
+		{
 			tempdest[i] = tempsrc[i];
-            i++; 
-        }
-    }
+			i++;
+		}
+	}
 	return (dest);
 }
 /*

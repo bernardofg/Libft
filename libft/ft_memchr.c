@@ -6,7 +6,7 @@
 /*   By: bfantine <bfantine@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 20:00:33 by bfantine          #+#    #+#             */
-/*   Updated: 2025/10/15 13:34:00 by bfantine         ###   ########.fr       */
+/*   Updated: 2025/10/16 17:42:08 by bfantine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 {
 	unsigned char	*temps;
 	unsigned char	tempc;
-	size_t		i;
+	size_t			i;
 
 	temps = (unsigned char *)s;
 	tempc = (unsigned char)c;
