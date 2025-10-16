@@ -6,7 +6,7 @@
 /*   By: bfantine <bfantine@student.42porto.co      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 17:52:59 by bfantine          #+#    #+#             */
-/*   Updated: 2025/10/16 18:17:54 by bfantine         ###   ########.fr       */
+/*   Updated: 2025/10/16 18:43:46 by bfantine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,4 @@
 
 char	*strnstr(const char *big, const char *little, size_t len)
 {
-	
 }

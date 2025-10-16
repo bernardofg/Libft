@@ -3,8 +3,8 @@ CFLAGS = -Wall -Wextra -Werror
 CC = cc
 RM = rm -rf
 
-SRC =	ft_isalpha.c \
-       	ft_isdigit.c \
+SRC = ft_isalpha.c \
+    ft_isdigit.c \
 	ft_isalnum.c \
 	ft_isascii.c \
 	ft_isprint.c \
@@ -21,10 +21,8 @@ SRC =	ft_isalpha.c \
 	ft_strrchr.c \
 	ft_strncmp.c \
 	ft_memchr.c \
-	ft_strnstr.c \
 	ft_atoi.c \
-	ft_calloc.c \
-	ft_strdup.c \
+	ft_strdup.c
 OBJ = $(SRC:.c=.o)
 
 all: $(NAME)

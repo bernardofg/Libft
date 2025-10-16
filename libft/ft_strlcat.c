@@ -6,7 +6,7 @@
 /*   By: bfantine <bfantine@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 19:30:29 by bfantine          #+#    #+#             */
-/*   Updated: 2025/10/16 18:18:29 by bfantine         ###   ########.fr       */
+/*   Updated: 2025/10/16 18:49:10 by bfantine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ size_t	strlcat(char *dst, const char *src, size_t dsize)
 	dst_len = ft_strlen(dst);
 	src_len = ft_strlen(src);
 	if (dst_len >= dsize)
-		dst_len = dst_len;
+		dst_len = src_len;
 	if (dst_len == dsize)
 		return (dst_len + src_len);
 	if (src_len < dsize + src_len)
