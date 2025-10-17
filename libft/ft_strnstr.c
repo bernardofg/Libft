@@ -6,7 +6,7 @@
 /*   By: bfantine <bfantine@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 17:52:59 by bfantine          #+#    #+#             */
-/*   Updated: 2025/10/17 00:13:45 by bfantine         ###   ########.fr       */
+/*   Updated: 2025/10/17 16:55:39 by bfantine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*strnstr(const char *big, const char *little, size_t len)
 	j = 0;
 	i = 0;
 	if (!little[0])
-		return (big);
+		return ((char *)big);
 	while (big[i] && i < len)
 	{
 		if (big[i] == little[0])

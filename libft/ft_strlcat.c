@@ -6,7 +6,7 @@
 /*   By: bfantine <bfantine@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 19:30:29 by bfantine          #+#    #+#             */
-/*   Updated: 2025/10/16 18:49:10 by bfantine         ###   ########.fr       */
+/*   Updated: 2025/10/17 17:01:02 by bfantine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,19 +16,18 @@ size_t	strlcat(char *dst, const char *src, size_t dsize)
 {
 	size_t	dst_len;
 	size_t	src_len;
+	size_t	i;
 
+	i = 0;
 	dst_len = ft_strlen(dst);
 	src_len = ft_strlen(src);
-	if (dst_len >= dsize)
-		dst_len = src_len;
-	if (dst_len == dsize)
-		return (dst_len + src_len);
-	if (src_len < dsize + src_len)
-		ft_memcpy(dst + dst_len, src, src_len + 1);
-	else
+	if (dsize <= dst_len)
+		return (dsize + dst_len);
+	while (src[i] && (i + dst_len) < dsize - 1)
 	{
-		ft_memcpy(dst + dst_len, src, dsize - dst_len - 1);
-		dst[dsize - 1] = '\0';
+		dst[dst_len + 1] = src[i];
+		i++;
 	}
+	dst[dst_len + 1] = 0;
 	return (dst_len + src_len);
 }

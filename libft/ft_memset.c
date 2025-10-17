@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bfantine@student.42porto.com <bfantine>    +#+  +:+       +#+        */
+/*   By: bfantine <bfantine@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/07 21:17:17 by bfantine@st       #+#    #+#             */
-/*   Updated: 2025/10/13 14:24:43 by bfantine         ###   ########.fr       */
+/*   Updated: 2025/10/17 15:59:34 by bfantine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
