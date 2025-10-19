@@ -1,37 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bfantine <bfantine@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/07 17:00:29 by bfantine          #+#    #+#             */
-/*   Updated: 2025/10/17 18:01:47 by bfantine         ###   ########.fr       */
+/*   Created: 2025/10/17 17:07:24 by bfantine          #+#    #+#             */
+/*   Updated: 2025/10/17 18:35:24 by bfantine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *str)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	size_t	i;
+	size_t	str_len;
+	char	*new;
 
-	i = 0;
-	while (str[i] != '\0')
-		i++;
-	return (i);
+	str_len = ft_strlen(s);
+	if (start > str_len)
+		return (ft_strdup(""));
+	else if (start + len > str_len)
+		len = str_len - start;
+	new = malloc(len + 1);
+	if (!new)
+		return (NULL);
+	ft_strlcpy(new, s + start, len + 1);
+	return (new);
 }
+
 /*
 #include <stdio.h>
+
 int main(void)
 {
-    const char *texto1 = "ovo";
-    const char *texto2 = "";
-    const char *texto3 = "alfredo";
+    char *s = "alfredo";
+    char *sub;
 
-    printf("Comprimento de \"%s\" = %zu\n", texto1, ft_strlen(texto1));
-    printf("Comprimento de \"%s\" = %zu\n", texto2, ft_strlen(texto2));
-    printf("Comprimento de \"%s\" = %zu\n", texto3, ft_strlen(texto3));
+    sub = ft_substr(s, 0, 4);
+    printf("%s\n", sub);
+    free(sub);
 
     return 0;
 }
