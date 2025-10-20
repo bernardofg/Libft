@@ -6,9 +6,11 @@
 /*   By: bfantine <bfantine@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/07 19:28:22 by bfantine@st       #+#    #+#             */
-/*   Updated: 2025/10/14 17:01:58 by bfantine         ###   ########.fr       */
+/*   Updated: 2025/10/20 15:14:31 by bfantine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_atoi(const char *nptr)
 {

@@ -6,7 +6,7 @@
 /*   By: bfantine <bfantine@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/07 16:46:58 by bfantine          #+#    #+#             */
-/*   Updated: 2025/10/16 18:53:34 by bfantine         ###   ########.fr       */
+/*   Updated: 2025/10/20 15:13:02 by bfantine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,7 @@
 
 int	ft_isalnum(int c)
 {
-	return (ft_isalpha(c) || ft_isdigit(c));
+	if (ft_isalpha(c) || ft_isdigit(c))
+		return (c);
+	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: bfantine <bfantine@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/07 15:40:13 by bfantine          #+#    #+#             */
-/*   Updated: 2025/10/17 00:33:49 by bfantine         ###   ########.fr       */
+/*   Updated: 2025/10/20 13:44:49 by bfantine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,5 @@
 
 int	ft_isalpha(int c)
 {
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
-		return (1);
-	return (0);
+	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
 }
