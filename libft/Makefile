@@ -32,7 +32,9 @@ SRC =	ft_isdigit.c \
 	ft_putnbr_fd.c \
 	ft_split.c \
 	ft_itoa.c \
-	ft_strjoin.c 
+	ft_strjoin.c \
+	ft_memmove.c \
+	ft_strteri.c
 
 OBJ = $(SRC:.c=.o)
 

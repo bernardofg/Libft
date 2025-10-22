@@ -6,7 +6,7 @@
 /*   By: bfantine <bfantine@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 21:01:28 by bfantine          #+#    #+#             */
-/*   Updated: 2025/10/21 21:08:39 by bfantine         ###   ########.fr       */
+/*   Updated: 2025/10/22 14:02:33 by bfantine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,4 +38,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	res[i] = 0;
 	return (res);
 }
-

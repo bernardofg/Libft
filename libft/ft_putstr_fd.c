@@ -6,7 +6,7 @@
 /*   By: bfantine <bfantine@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 19:08:59 by bfantine          #+#    #+#             */
-/*   Updated: 2025/10/17 19:10:33 by bfantine         ###   ########.fr       */
+/*   Updated: 2025/10/22 14:08:45 by bfantine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	ft_putstr_fd(char *s, int fd)
 	int	i;
 
 	i = 0;
+	if (!s)
+		return ;
 	while (s[i])
 	{
 		write(fd, &s[i], 1);

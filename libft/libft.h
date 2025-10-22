@@ -6,7 +6,7 @@
 /*   By: bfantine <bfantine@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/09 19:11:47 by bfantine@st       #+#    #+#             */
-/*   Updated: 2025/10/21 21:10:05 by bfantine         ###   ########.fr       */
+/*   Updated: 2025/10/22 13:58:30 by bfantine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,9 +42,11 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	**ft_split(char const *s, char c);
 char	*ft_itoa(int n);
 char	*ft_strjoin(char const *s1, char const *s2);
+void	*ft_memmove(void *dest, const void *src, size_t n);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 
 #endif
