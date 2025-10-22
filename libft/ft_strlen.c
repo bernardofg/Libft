@@ -6,7 +6,7 @@
 /*   By: bfantine <bfantine@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/07 17:00:29 by bfantine          #+#    #+#             */
-/*   Updated: 2025/10/17 18:01:47 by bfantine         ###   ########.fr       */
+/*   Updated: 2025/10/22 14:17:58 by bfantine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,22 +17,7 @@ size_t	ft_strlen(const char *str)
 	size_t	i;
 
 	i = 0;
-	while (str[i] != '\0')
+	while (str[i])
 		i++;
 	return (i);
 }
-/*
-#include <stdio.h>
-int main(void)
-{
-    const char *texto1 = "ovo";
-    const char *texto2 = "";
-    const char *texto3 = "alfredo";
-
-    printf("Comprimento de \"%s\" = %zu\n", texto1, ft_strlen(texto1));
-    printf("Comprimento de \"%s\" = %zu\n", texto2, ft_strlen(texto2));
-    printf("Comprimento de \"%s\" = %zu\n", texto3, ft_strlen(texto3));
-
-    return 0;
-}
-*/
