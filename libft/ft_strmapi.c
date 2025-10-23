@@ -6,7 +6,7 @@
 /*   By: bfantine <bfantine@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 14:07:01 by bfantine          #+#    #+#             */
-/*   Updated: 2025/10/22 14:07:02 by bfantine         ###   ########.fr       */
+/*   Updated: 2025/10/23 16:24:15 by bfantine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	size_t	len;
 	char	*nstr;
 
+	if (!s && !f)
+		return (NULL);
 	i = 0;
 	len = ft_strlen(s);
 	nstr = malloc(len + 1);

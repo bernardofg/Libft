@@ -6,7 +6,7 @@
 /*   By: bfantine <bfantine@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 19:11:25 by bfantine          #+#    #+#             */
-/*   Updated: 2025/10/22 14:08:43 by bfantine         ###   ########.fr       */
+/*   Updated: 2025/10/23 16:47:38 by bfantine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
+	if (!s)
+		return ;
 	ft_putstr_fd(s, fd);
 	write (fd, "\n", 1);
 }
