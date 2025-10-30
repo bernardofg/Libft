@@ -6,7 +6,7 @@
 /*   By: bfantine <bfantine@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 19:56:25 by bfantine          #+#    #+#             */
-/*   Updated: 2025/10/23 16:43:47 by bfantine         ###   ########.fr       */
+/*   Updated: 2025/10/30 15:30:14 by bfantine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,3 +103,24 @@ char	**ft_split(char const *s, char c)
 	out[i] = NULL;
 	return (out);
 }
+/*
+#include <stdio.h>
+int	main(void)
+{
+	char	*str = "alfredo,cebola,coelho,abelha";
+	char	c = ',';
+	char	**result = ft_split(str, c);
+	int		i = 0;
+
+	while (result[i])
+	{
+		printf("%s\n", result[i]);
+		i++;
+	}
+	i = 0;
+	while (result[i])
+		free(result[i++]);
+	free(result);
+	return (0);
+}
+*/

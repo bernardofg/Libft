@@ -6,7 +6,7 @@
 /*   By: bfantine <bfantine@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 20:37:20 by bfantine          #+#    #+#             */
-/*   Updated: 2025/10/22 19:40:18 by bfantine         ###   ########.fr       */
+/*   Updated: 2025/10/29 19:05:12 by bfantine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,14 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	ft_bzero(ptr, i);
 	return (ptr);
 }
+/*
+#include "stdio.h"
+int	main(void)
+{
+	int num = 15;
+	int *res = ft_calloc(num, sizeof(int));
+	for (int i = 0; i < num; i++)
+		printf("%d ", res[i]);
+	return (0);
+}
+*/
