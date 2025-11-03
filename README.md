@@ -2,6 +2,8 @@
 
 **Libft** is a C library created within the 42 curriculum that focuses on reimplementing standard C functions while adding extra utility functions to facilitate development and reuse in future projects.
 
+---
+
 ## 📖 Description
 
 The purpose of **libft** is to provide a personal C library containing implementations of classic standard functions (e.g., `strlen`, `strcpy`, `memset`, etc.), along with extra utility functions to support future development.
@@ -28,6 +30,8 @@ The main aim of this project is to deepen your knowledge of:
 - `includes/libft.h` — headers and function prototypes  
 - `srcs/` — function implementations  
 - `Makefile` — compiles the library with `make`, generating `libft.a`
+
+---
 
 ## How to Use
 
