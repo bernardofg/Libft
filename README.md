@@ -1,3 +1,3 @@
 # Libft
 
-**Libft** is a C library developed as part of the 42 curriculum, aimed at recreating standard C functions and implementing additional utility functions useful for development.
+**Libft** is a C library created within the 42 curriculum that focuses on reimplementing standard C functions while adding extra utility functions to facilitate development and reuse in future projects.
